@@ -5,6 +5,12 @@ export default class ProductService {
   create = async (products: IProducts[]) => {
     const list = [];
     for await (const { product, product_price, product_quantity } of products) {
+      // await client.products.deleteMany({
+      //   where: {
+      //     product,
+      //   },
+      // });
+
       const result = await client.products.create({
         data: {
           product,
