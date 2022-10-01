@@ -1,12 +1,4 @@
-body {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-  background-color: #5fe245c2;
-}
-
 .main-div {
-  background-color: #5fe245c2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,16 +14,16 @@ body {
 }
 
 .div-products {
-  background-color: rgb(179, 206, 82);
+  background-color: rgb(62, 63, 58);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-color: 100px solid rgba(41, 41, 150, 0.911);
   text-align: center;
   gap: 50px;
   border-radius: 5px;
   width: 400px;
   height: 100px;
+  color: white;
 }
 
 .div-input-file {
@@ -43,9 +35,17 @@ body {
   height: 150px;
 }
 
-.input-file {
+.input-file-btn {
   border: none;
   border-radius: 5px;
-  background-color: rgb(206, 121, 82);
+  background-color: rgb(183, 216, 65);
   height: 40px;
+  font-weight: 700;
+}
+
+.input-file-btn:hover {
+  background-color: rgb(148, 179, 39);
+  cursor: pointer;
+  transform: scale(1.2);
+  animation: 1.5s;
 }

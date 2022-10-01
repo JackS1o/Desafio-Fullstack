@@ -22,22 +22,22 @@ function App() {
     <div className="main-div">
       <div className="div-input-file">
         <input className="input-file" type="file" multiple ref={filesElement} />
-        <button className="input-file" onClick={sendFile}>Send file</button>
+        <button className="input-file-btn" onClick={sendFile}>Send file</button>
       </div>
 
       <div className="div-map-products">
         {files.map((item) => (
           <div className="div-products">
             <strong>
-              <h4>Produto</h4>
+              <h4 style={{color: "green"}}>Produto</h4>
               {item.product}
             </strong>
             <strong>
-              <h4>Preço</h4>
+              <h4 style={{color: "rgb(194, 57, 57)"}}>Preço</h4>
               {item.product_price}
             </strong>
             <strong>
-              <h4>Quantidade</h4>
+              <h4 style={{color: "yellow"}}>Quantidade</h4>
               {item.product_quantity}
             </strong>
           </div>
