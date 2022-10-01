@@ -10,5 +10,6 @@ const multerConfig = multer();
 const router = Router();
 
 router.post('/products', multerConfig.single('file'), controller.create);
+// router.get('/products', controller.getProducts);
 
 export { router };
