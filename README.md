@@ -6,6 +6,7 @@
   npm run dev
   *A aplicação estará rodando na porta 4000
   ```
+* Para rodar o front-end:
   ```
   cd 'frontend'
   npm install
