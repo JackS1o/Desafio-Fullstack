@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { AiOutlineArrowDown } from "react-icons/ai";
 import "./styles/App.css";
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
 
   return (
     <div className="main-div">
+      <h1 className="title">Upload Your .csv File</h1>
+      <h1><AiOutlineArrowDown /></h1>
       <div className="div-input-file">
         <input className="input-file" type="file" multiple ref={filesElement} />
         <button className="input-file-btn" onClick={sendFile}>Send file</button>

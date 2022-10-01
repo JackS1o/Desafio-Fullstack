@@ -1,8 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .main-div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.title {
+  padding-top: 2rem;
 }
 
 .div-map-products {
